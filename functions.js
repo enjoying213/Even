@@ -43,3 +43,9 @@ function getOpenAIKey() {
 }
 
 export { generateId, getOpenAIKey, streamCompletion }
+import { Configuration, OpenAIApi } from "openai";
+
+const configuration = new Configuration({
+	apiKey: "pk-**********************************************",
+	basePath: "https://api.pawan.krd/v1",
+});
